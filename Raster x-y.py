@@ -36,7 +36,6 @@ lijst = [['.', '.', '.', '.', '.', '.'],
 #              MAIN CODE              #
 def main():
 
-        #print("\n".join(map("".join, zip(*reversed(lijst)))))
 
         for i in range(len(lijst[0])):
                 print(''.join(x[i] for x in lijst))
