@@ -19,7 +19,7 @@ Information about the script goes here
 __author__ = "Kevin Vervloet"
 __email__ = "kevin.vervloet@student.kdg.be"
 __Version__ = "(Code version)"
-__status__ = "Development"
+__status__ = "Finished"
 
 #              VARIABLES              #
 lijst = [['.', '.', '.', '.', '.', '.'],

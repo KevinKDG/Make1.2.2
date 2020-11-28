@@ -10,7 +10,7 @@ De lijst mag je kiezen:
 
 
 #               IMPORTS               #
-
+import time
 
 #          AUTHOR INFORMATION         #
 
@@ -24,20 +24,24 @@ De lijst mag je kiezen:
 __author__ = "Kevin Vervloet"
 __email__ = "kevin.vervloet@student.kdg.be"
 __Version__ = "(Code version)"
-__status__ = "Development"
+__status__ = "Finished"
 
 #              VARIABLES              #
-word = ["hello", "bonjour", "konnichiwa", "guten tag"]
+list = ["hello", "bonjour", "konnichiwa", "guten tag"]
+
 
 #              MAIN CODE              #
 def main():
 
-    guess = input("Can you guess a popular greeting in different languages? Hint: English, French, German, Japanese: ")
+    guess = input("""Can you guess one of these popular greetings?
+    Hint: English, French, German, Japanese: """)
 
-    if guess == "hello" or guess == "bonjour" or guess == "konichiwa" or guess == "guten tag":
+    if guess in list:
         print("You guessed correctly!")
     else:
-        print("You're wrong :(")
+        print("You're wrong :(, Try again")
+        time.sleep(0.5)
+        main()
 
 
 if __name__ == '__main__':    #run tests if called from command-line
