@@ -33,13 +33,13 @@ list = ["hello", "bonjour", "konnichiwa", "guten tag"]
 #              MAIN CODE              #
 def main():
 
-    guess = input("""Can you guess one of these popular greetings?
-    Hint: English, French, German, Japanese: """)
+    guess = input("""Can you guess one of these popular greetings?          
+    Hint: English, French, German, Japanese: """)                           # Input Question
 
     if guess in list:
         print("You guessed correctly!")
     else:
-        print("You're wrong :(, Try again")
+        print("You're wrong :(, Try again")                                 # Lets the user guess again
         time.sleep(0.5)
         main()
 

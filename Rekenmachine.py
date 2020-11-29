@@ -33,7 +33,7 @@ __status__ = "Finished"
 def main():
 
     try:
-        Number_1 = int(input("Pick a number: "))  # Input, pick your first number
+        Number_1 = int(input("Pick a number: "))        # Input, pick your first number
         Number_2 = int(input("Pick another number: "))  # Input, it lets you pick a second number
 
         what = input('''What would you like to do?              
@@ -55,7 +55,7 @@ def main():
         elif what == '/':
             print(Number_1, "/", Number_2, "is", Number_1 / Number_2)
 
-    except ValueError:
+    except ValueError:                                              # If the input is not a number, retry
         print('this is not a valid number, Please try again')
         time.sleep(0.5)
         main()
